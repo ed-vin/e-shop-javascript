@@ -16,8 +16,11 @@ Here are a couple of screenshots showcasing the layout and functionality:
 ### Product Page
 ![Product Page](images/screen1.png)
 
-### Checkout Page
+### Shopping cart
 ![Checkout Page](images/screen2.png)
+
+### Checkout
+![Checkout Page](images/screen3.png)
 
 ## Contributing
 
