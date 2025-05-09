@@ -120,7 +120,7 @@ const products = [
     renderCheckout();
   }
   
-  // 🔁 Basket Counter Updater
+  // Basket Counter Updater
   function updateBasketCount() {
     const count = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
     const basketElement = document.getElementById("basket-count");
