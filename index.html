@@ -3,36 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini E-Store</title>
+  <title>minimalistic e-store</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header class="sticky-header">
         <h1>e-store</h1>
-        <div id="basket">
-          🛒 <span id="basket-count">0</span>
-        </div>
-      </header>
-  </header>
+        <!-- Basket icon wrapped with anchor to navigate to the cart section -->
+        <a href="#cart-section">
+          <div id="basket">
+            🛒 <span id="basket-count">0</span>
+          </div>
+        </a>
+    </header>
 
   <div class="container">
     <div class="products" id="products"></div>
 
-    <h2>Shopping Cart</h2>
-    <div id="cart"></div>
+    <!-- Shopping Cart Section, with the ID that matches the anchor link -->
+    <div id="cart-section">
+      <h2>Shopping Cart</h2>
+      <div id="cart"></div>
+      <a href="#checkout">
+        <button class="checkout-btn" onclick="showCheckout()">Go to Checkout</button>
+      </a>
+    </div>
 
-    <button class="checkout-btn" onclick="showCheckout()">Go to Checkout</button>
-
+    <!-- Checkout Section -->
     <div id="checkout" class="checkout-container">
       <h2>Checkout Summary</h2>
       <div id="checkout-summary"></div>
 
+      <!-- Coupon Section -->
       <div id="coupon-section">
-        <label for="coupon">Enter Coupon Code:</label>
+        <label for="coupon">Enter Coupon Code:</label><br />
         <input type="text" id="coupon" placeholder="e.g. SAVE10" />
-        <button onclick="applyCoupon()">Apply Coupon</button>
+        <button class="apply-btn" onclick="applyCoupon()">Apply Coupon</button>
         <p id="discount-message"></p>
       </div>
+
+      <!-- Payment Alternatives Section -->
+      <div id="payment-options">
+        <h3>Choose Payment Method:</h3>
+        <div class="payment-methods">
+          <label>
+            <input type="radio" name="payment-method" value="credit-card" /> Credit Card
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="paypal" /> PayPal
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="bank-transfer" /> Bank Transfer
+          </label>
+        </div>
+      </div>
+
+      <!-- Pay Button -->
+      <button class="pay-btn" onclick="processPayment()">Pay Now</button>
     </div>
   </div>
 

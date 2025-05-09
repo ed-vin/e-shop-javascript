@@ -110,7 +110,7 @@ const products = [
     if (coupons[code]) {
       activeDiscount = coupons[code];
       message.textContent = `Coupon applied: ${activeDiscount}% off`;
-      message.style.color = "green";
+      message.style.color = "yellow";
     } else {
       activeDiscount = 0;
       message.textContent = "Invalid coupon code.";
