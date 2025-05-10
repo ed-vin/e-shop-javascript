@@ -22,6 +22,8 @@ Here are a couple of screenshots showcasing the layout and functionality:
 ### Checkout
 ![Checkout Page](images/screen3.png)
 
+## Demo: https://ed-vin.github.io/e-shop-javascript/
+
 ## Contributing
 
 1. Fork the repository.
