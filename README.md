@@ -1,6 +1,6 @@
 # Mini E-Store
 
-Welcome to the Mini E-Store! This project is a simple e-commerce website where users can browse products, add them to the cart, and proceed to checkout.
+This project is a simple e-commerce website where users can browse products, add them to the cart, and proceed to checkout.
 
 ## Features
 
