@@ -1,11 +1,11 @@
-/* ========== CSS Reset ========== */
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========== Base Styling ========== */
+/* Base Styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -13,7 +13,7 @@ body {
   padding-top: 70px; /* Reserve space for sticky header */
 }
 
-/* ========== Sticky Header ========== */
+/* Sticky Header */
 header.sticky-header {
   position: fixed;
   top: 0;
@@ -32,7 +32,7 @@ header.sticky-header {
   font-weight: bold;
 }
 
-/* ========== Main Container ========== */
+/* Main Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -41,7 +41,7 @@ header.sticky-header {
   text-align: center;
 }
 
-/* ========== Product Grid ========== */
+/*  Product Grid  */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -80,7 +80,7 @@ header.sticky-header {
   margin-bottom: 12px;
 }
 
-/* ========== General Button Styling ========== */
+/*  General Button Styling  */
 button {
   background-color: #000;
   color: #fff;
@@ -96,7 +96,7 @@ button:hover {
   background-color: #333;
 }
 
-/* ========== Cart Section ========== */
+/*  Cart Section  */
 #cart {
   margin-bottom: 30px;
   text-align: left;
@@ -111,7 +111,7 @@ button:hover {
   border-radius: 8px;
 }
 
-/* ========== Checkout Section ========== */
+/*  Checkout Section  */
 .checkout-container {
   display: none;
   text-align: left;
@@ -129,7 +129,7 @@ button:hover {
   padding: 15px;
 }
 
-/* ========== Checkout Item Styling ========== */
+/*  Checkout Item Styling  */
 .checkout-item {
   display: flex;
   align-items: center;
@@ -161,7 +161,7 @@ button:hover {
   margin: 0;
 }
 
-/* ========== Coupon Section ========== */
+/*  Coupon Section  */
 #coupon-section {
   margin-top: 10px;
   padding: 20px;
@@ -190,7 +190,7 @@ button:hover {
   text-align: left;
 }
 
-/* ========== Payment Options ========== */
+/*  Payment Options  */
 #payment-options {
   margin-top: 20px;
   padding: 20px;
@@ -212,7 +212,7 @@ button:hover {
   margin-right: 10px;
 }
 
-/* ========== Pay Button ========== */
+/*  Pay Button  */
 .pay-btn {
   background-color: yellow;
   color: black;
@@ -227,7 +227,7 @@ button:hover {
   background-color: #fff;
 }
 
-/* ========== Responsive Design ========== */
+/*  Responsive Design  */
 @media (max-width: 1024px) {
   .products {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -250,7 +250,7 @@ button:hover {
   }
 }
 
-/* ========== Basket Count Display (Top Right) ========== */
+/*  Basket Count Display (Top Right)  */
 #basket {
   position: absolute;
   right: 20px;
